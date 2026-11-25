@@ -127,7 +127,7 @@ Tested on Proxmox 9.2 with unprivileged containers. "Script" is the route from s
 | App | Script | Image | Docker | Needs |
 | --- | :---: | :---: | :---: | --- |
 | [ArrowLoop](https://github.com/junkerderprovinz/arrowloop) | ✓ | ✓ | | |
-| [CannonCommander](https://github.com/junkerderprovinz/cannoncommander) | ✓ | ✓¹ | | |
+| [CannonCommander](https://github.com/junkerderprovinz/cannoncommander) | ✓ | ✓ | | |
 | [CastleParcel](https://github.com/junkerderprovinz/castleparcel) | ✓ | ✓ | | HTTPS in front, browsers only encrypt on a secure page |
 | [KnightLoader](https://github.com/junkerderprovinz/knightloader) | ✓ | ✓ | | |
 | [ParleyPort](https://github.com/junkerderprovinz/parleyport) | ✓ | ✓ | | |
@@ -158,8 +158,6 @@ Tested on Proxmox 9.2 with unprivileged containers. "Script" is the route from s
 | [Silo](https://github.com/junkerderprovinz/unraid-apps/tree/main/silo) | | ✓ | | `MINIO_ROOT_USER`, `MINIO_ROOT_PASSWORD` |
 | [Standard Notes WebUI](https://github.com/junkerderprovinz/unraid-apps/tree/main/standardnotes-webui) | | ✓ | | |
 | [VersityGW](https://github.com/junkerderprovinz/unraid-apps/tree/main/versitygw) | | ✓ | | `ROOT_ACCESS_KEY`, `ROOT_SECRET_KEY` |
-
-¹ Works from the app's next release. The current image does not start in a Proxmox container yet.
 
 <br>
 
