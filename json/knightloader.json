@@ -1,0 +1,51 @@
+{
+  "name": "KnightLoader",
+  "slug": "knightloader",
+  "categories": [
+    11
+  ],
+  "date_created": "2026-11-24",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 8749,
+  "documentation": "https://github.com/junkerderprovinz/knightloader#readme",
+  "website": "https://github.com/junkerderprovinz/knightloader",
+  "repository": "https://github.com/junkerderprovinz/knightloader",
+  "architectures": [
+    "amd64"
+  ],
+  "platforms": [
+    "pve"
+  ],
+  "logo": "https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/knightloader/icon.png",
+  "description": "A download manager for hosters, debrid services, torrents, Usenet and video sites. It brings a headless JDownloader, yt-dlp and a browser for links that need one.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/knightloader.sh",
+      "config_path": "/etc/systemd/system/knightloader.service",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 12,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Downloads land in /opt/knightloader/data/downloads. Mount your download folder there before the first download.",
+      "type": "info"
+    },
+    {
+      "text": "Click'n'Load container files (DLC) need the key that only the official image carries, so they do not open here.",
+      "type": "warning"
+    }
+  ]
+}

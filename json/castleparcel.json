@@ -1,0 +1,41 @@
+{
+  "name": "CastleParcel",
+  "slug": "castleparcel",
+  "categories": [11],
+  "date_created": "2026-11-24",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 3000,
+  "documentation": "https://github.com/junkerderprovinz/castleparcel#readme",
+  "website": "https://github.com/junkerderprovinz/castleparcel",
+  "repository": "https://github.com/junkerderprovinz/castleparcel",
+  "architectures": ["amd64", "arm64"],
+  "platforms": ["pve"],
+  "logo": "https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/castleparcel/icon.png",
+  "description": "A file transfer site for big files on your own server. Files are encrypted in the browser before upload, so the server never sees what they contain.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/castleparcel.sh",
+      "config_path": "/opt/castleparcel/config",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 8,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Browsers only encrypt on a secure page, so put CastleParcel behind a reverse proxy with HTTPS before you share links.",
+      "type": "warning"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ArrowLoop",
+  "slug": "arrowloop",
+  "categories": [7],
+  "date_created": "2026-11-24",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 8422,
+  "documentation": "https://junkerderprovinz.github.io/arrowloop/",
+  "website": "https://github.com/junkerderprovinz/arrowloop",
+  "repository": "https://github.com/junkerderprovinz/arrowloop",
+  "architectures": ["amd64", "arm64"],
+  "platforms": ["pve"],
+  "logo": "https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/arrowloop/icon.png",
+  "description": "Two-way file sync that shows you the plan before it moves anything. It keeps a state database, a trash and two brakes against mass deletes, and syncs with any rclone backend.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/arrowloop.sh",
+      "config_path": "/opt/arrowloop/config/arrowloop.json",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 8,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Mount the folders you want to sync into the container before you set up a job.",
+      "type": "info"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "CannonCommander",
+  "slug": "cannoncommander",
+  "categories": [
+    11
+  ],
+  "date_created": "2026-11-24",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 80,
+  "documentation": "https://github.com/junkerderprovinz/cannoncommander#readme",
+  "website": "https://github.com/junkerderprovinz/cannoncommander",
+  "repository": "https://github.com/junkerderprovinz/cannoncommander",
+  "architectures": [
+    "amd64"
+  ],
+  "platforms": [
+    "pve"
+  ],
+  "logo": "https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/cannoncommander/icon.png",
+  "description": "A two-pane file manager in the browser with previews, archives and remote storage through rclone.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/cannoncommander.sh",
+      "config_path": "/opt/cannoncommander/config/config.yaml",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 8,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Mount the folders you want to manage into the container and add them as sources in the settings.",
+      "type": "info"
+    }
+  ]
+}

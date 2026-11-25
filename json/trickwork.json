@@ -1,0 +1,43 @@
+{
+  "name": "TrickWork",
+  "slug": "trickwork",
+  "categories": [
+    0
+  ],
+  "date_created": "2026-11-24",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 3210,
+  "documentation": "https://github.com/junkerderprovinz/trickwork#readme",
+  "website": "https://github.com/junkerderprovinz/trickwork",
+  "repository": "https://github.com/junkerderprovinz/trickwork",
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "platforms": [
+    "pve"
+  ],
+  "logo": "https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/trickwork/icon.png",
+  "description": "An ASCII art generator that turns images into proportional, font-aware ASCII art in the browser.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/trickwork.sh",
+      "config_path": "/etc/systemd/system/trickwork.service",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 6,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": []
+}

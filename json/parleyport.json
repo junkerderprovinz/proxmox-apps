@@ -1,0 +1,41 @@
+{
+  "name": "ParleyPort",
+  "slug": "parleyport",
+  "categories": [4],
+  "date_created": "2026-11-24",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 8760,
+  "documentation": "https://github.com/junkerderprovinz/parleyport#readme",
+  "website": "https://github.com/junkerderprovinz/parleyport",
+  "repository": "https://github.com/junkerderprovinz/parleyport",
+  "architectures": ["amd64", "arm64"],
+  "platforms": ["pve"],
+  "logo": "https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/parleyport/icon.png",
+  "description": "A relay for apps that pair their instances across networks. Instances meet there, and the relay passes on traffic it cannot read.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/parleyport.sh",
+      "config_path": "/var/lib/parleyport/parleyport.env",
+      "resources": {
+        "cpu": 1,
+        "ram": 1024,
+        "hdd": 4,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "To serve HTTPS with its own Let's Encrypt certificate, set PARLEYPORT_DOMAIN in /var/lib/parleyport/parleyport.env and restart the service.",
+      "type": "info"
+    }
+  ]
+}
