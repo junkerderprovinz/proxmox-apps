@@ -130,12 +130,12 @@ Tested on Proxmox 9.2 with unprivileged containers. "Script" is the route from s
 | [CannonCommander](https://github.com/junkerderprovinz/cannoncommander) | ✓ | ✓¹ | | |
 | [CastleParcel](https://github.com/junkerderprovinz/castleparcel) | ✓ | ✓ | | HTTPS in front, browsers only encrypt on a secure page |
 | [KnightLoader](https://github.com/junkerderprovinz/knightloader) | ✓ | ✓ | | |
-| [ParleyPort](https://github.com/junkerderprovinz/parleyport) | ✓ | ✓² | | |
+| [ParleyPort](https://github.com/junkerderprovinz/parleyport) | ✓ | ✓ | | |
 | [TrickWork](https://github.com/junkerderprovinz/trickwork) | ✓ | ✓ | | |
 | [BombVault](https://github.com/junkerderprovinz/bombvault) | | | ✓ | |
 | [OpenHands](https://github.com/junkerderprovinz/unraid-apps/tree/main/openhands) | | | ✓ | |
-| [Euro-Office](https://github.com/junkerderprovinz/euro-office) | | ✓¹ | | `JWT_SECRET` |
-| [Excalidraw](https://github.com/junkerderprovinz/excalidraw) | | ✓¹ | | |
+| [Euro-Office](https://github.com/junkerderprovinz/euro-office) | | ✓ | | `JWT_SECRET` |
+| [Excalidraw](https://github.com/junkerderprovinz/excalidraw) | | ✓ | | |
 | [FileBot](https://github.com/junkerderprovinz/filebot) | | ✓ | | |
 | [Garage](https://github.com/junkerderprovinz/garage) | | ✓ | | |
 | [HandBrake](https://github.com/junkerderprovinz/handbrake) | | ✓ | | |
@@ -159,8 +159,7 @@ Tested on Proxmox 9.2 with unprivileged containers. "Script" is the route from s
 | [Standard Notes WebUI](https://github.com/junkerderprovinz/unraid-apps/tree/main/standardnotes-webui) | | ✓ | | |
 | [VersityGW](https://github.com/junkerderprovinz/unraid-apps/tree/main/versitygw) | | ✓ | | `ROOT_ACCESS_KEY`, `ROOT_SECRET_KEY` |
 
-¹ Works from the app's next release. The current image does not start in a Proxmox container yet.<br>
-² Works today. With `PARLEYPORT_DOMAIN` set, ParleyPort serves HTTPS on port 443, and that works from its next release.
+¹ Works from the app's next release. The current image does not start in a Proxmox container yet.
 
 <br>
 
