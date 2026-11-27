@@ -120,42 +120,279 @@ The same works for `openhands`.
 
 <p><a id="6-apps" href="#6-apps"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/assets/sections/6-apps-dark.svg"><img src=".github/assets/sections/6-apps.svg" alt="6. Apps" width="100%"></picture></a></p>
 
-Tested on Proxmox 9.2 with unprivileged containers. "Script" is the route from section 3, "Image" the one from section 4 and "Docker" the one from section 5.
+Tested on Proxmox 9.2 with unprivileged containers. Beside each name are the ways the app takes: Script from section 3, Image from section 4 and Docker from section 5.
 
-| App | Script | Image | Docker | Needs |
-| --- | :---: | :---: | :---: | --- |
-| [ArrowLoop](https://github.com/junkerderprovinz/arrowloop) | ✓ | ✓ | | |
-| [CannonCommander](https://github.com/junkerderprovinz/cannoncommander) | ✓ | ✓ | | |
-| [CastleParcel](https://github.com/junkerderprovinz/castleparcel) | ✓ | ✓ | | HTTPS in front, browsers only encrypt on a secure page |
-| [KnightLoader](https://github.com/junkerderprovinz/knightloader) | ✓ | ✓ | | |
-| [ParleyPort](https://github.com/junkerderprovinz/parleyport) | ✓ | ✓ | | |
-| [TrickWork](https://github.com/junkerderprovinz/trickwork) | ✓ | ✓ | | |
-| [BombVault](https://github.com/junkerderprovinz/bombvault) | | | ✓ | |
-| [OpenHands](https://github.com/junkerderprovinz/unraid-apps/tree/main/openhands) | | | ✓ | |
-| [Euro-Office](https://github.com/junkerderprovinz/euro-office) | | ✓ | | `JWT_SECRET` |
-| [Excalidraw](https://github.com/junkerderprovinz/excalidraw) | | ✓ | | |
-| [FileBot](https://github.com/junkerderprovinz/filebot) | | ✓ | | |
-| [Garage](https://github.com/junkerderprovinz/garage) | | ✓ | | |
-| [HandBrake](https://github.com/junkerderprovinz/handbrake) | | ✓ | | |
-| [JDownloader](https://github.com/junkerderprovinz/jdownloader) | | ✓ | | |
-| [JuiceFS](https://github.com/junkerderprovinz/juicefs) | | ✓ | | |
-| [Krusader](https://github.com/junkerderprovinz/krusader) | | ✓ | | |
-| [Matrix](https://github.com/junkerderprovinz/matrix) | | ✓ | | a PostgreSQL server, `SERVER_NAME`, `POSTGRES_HOST`, `POSTGRES_PASSWORD` |
-| [OpenCloud](https://github.com/junkerderprovinz/opencloud) | | ✓ | | `IDM_ADMIN_PASSWORD`, `OC_URL` |
-| [PrusaSlicer](https://github.com/junkerderprovinz/prusaslicer) | | ✓ | | |
-| [RustDesk](https://github.com/junkerderprovinz/rustdesk) | | ✓ | | `RELAY` and the three `RUSTDESK_API_RUSTDESK_*` addresses |
-| [Seafile](https://github.com/junkerderprovinz/seafile) | | ✓ | | `SEAFILE_SERVER_HOSTNAME`, `INIT_SEAFILE_ADMIN_EMAIL` |
-| [Securo](https://github.com/junkerderprovinz/securo) | | ✓ | | |
-| [Stellarium](https://github.com/junkerderprovinz/stellarium) | | ✓ | | |
-| [Claper](https://github.com/junkerderprovinz/unraid-apps/tree/main/claper) | | ✓ | | a PostgreSQL server, `DATABASE_URL`, `SECRET_KEY_BASE`, `BASE_URL` |
-| [CouchDB](https://github.com/junkerderprovinz/unraid-apps/tree/main/couchdb) | | ✓ | | `COUCHDB_PASSWORD` |
-| [n8n](https://github.com/junkerderprovinz/unraid-apps/tree/main/n8n) | | ✓ | | a PostgreSQL server, `DB_POSTGRESDB_HOST`, `DB_POSTGRESDB_PASSWORD`, `N8N_HOST`, `WEBHOOK_URL` |
-| [Pocket ID](https://github.com/junkerderprovinz/unraid-apps/tree/main/pocket-id) | | ✓ | | `APP_URL` as a domain name, `ENCRYPTION_KEY` |
-| [RustFS](https://github.com/junkerderprovinz/unraid-apps/tree/main/rustfs) | | ✓ | | `RUSTFS_ACCESS_KEY`, `RUSTFS_SECRET_KEY` |
-| [SeaweedFS](https://github.com/junkerderprovinz/unraid-apps/tree/main/seaweedfs) | | ✓ | | |
-| [Silo](https://github.com/junkerderprovinz/unraid-apps/tree/main/silo) | | ✓ | | `MINIO_ROOT_USER`, `MINIO_ROOT_PASSWORD` |
-| [Standard Notes WebUI](https://github.com/junkerderprovinz/unraid-apps/tree/main/standardnotes-webui) | | ✓ | | |
-| [VersityGW](https://github.com/junkerderprovinz/unraid-apps/tree/main/versitygw) | | ✓ | | `ROOT_ACCESS_KEY`, `ROOT_SECRET_KEY` |
+<!-- apps:start -->
+### Apps
+
+*My own software, built and published by junkerderprovinz. Full docs live in each app's own repository.*
+
+<a id="arrowloop"></a>
+<img src=".github/readme-icons/arrowloop.png" width="84" align="left" alt="ArrowLoop">
+
+**[ArrowLoop](https://github.com/junkerderprovinz/arrowloop#readme)** · [Script](#3-install-with-a-script) · [Image](#4-run-the-image)<br>
+Two-way file sync that shows you the plan before it touches a file, sends deletions to a trash and stops a run that would delete too much.
+
+<br clear="all">
+
+<a id="bombvault"></a>
+<img src=".github/readme-icons/bombvault.png" width="84" align="left" alt="BombVault">
+
+**[BombVault](https://github.com/junkerderprovinz/bombvault#readme)** · [Docker](#5-run-it-with-docker)<br>
+Backup and full disaster recovery for containers, VMs and the flash, powered by restic, with one-click backup and cross-server restore.
+
+<br clear="all">
+
+<a id="cannoncommander"></a>
+<img src=".github/readme-icons/cannoncommander.png" width="84" align="left" alt="CannonCommander">
+
+**[CannonCommander](https://github.com/junkerderprovinz/cannoncommander#readme)** · [Script](#3-install-with-a-script) · [Image](#4-run-the-image)<br>
+The most beautiful file manager you will ever run, and the only one you need: two panels, F5 to copy, jobs in the background and a trash for second thoughts.
+
+<br clear="all">
+
+<a id="castleparcel"></a>
+<img src=".github/readme-icons/castleparcel.png" width="84" align="left" alt="CastleParcel">
+
+**[CastleParcel](https://github.com/junkerderprovinz/castleparcel#readme)** · [Script](#3-install-with-a-script) · [Image](#4-run-the-image)<br>
+The big-file transfer site you know, on your own server and sealed: encrypted in your browser, with an optional owner sign-in, self-expiring share links, file requests and notes.
+
+<br clear="all">
+
+<a id="knightloader"></a>
+<img src=".github/readme-icons/knightloader.png" width="84" align="left" alt="KnightLoader">
+
+**[KnightLoader](https://github.com/junkerderprovinz/knightloader#readme)** · [Script](#3-install-with-a-script) · [Image](#4-run-the-image)<br>
+Self-hosted download manager for hosters, debrid, torrents, Usenet and video, with an Android app and a browser extension.
+
+<br clear="all">
+
+<a id="parleyport"></a>
+<img src=".github/readme-icons/parleyport.png" width="84" align="left" alt="ParleyPort">
+
+**[ParleyPort](https://github.com/junkerderprovinz/parleyport#readme)** · [Script](#3-install-with-a-script) · [Image](#4-run-the-image)<br>
+Your own relay for apps that pair their instances: on different networks they meet there, and it passes on what it cannot read.
+
+<br clear="all">
+
+<a id="trickwork"></a>
+<img src=".github/readme-icons/trickwork.png" width="84" align="left" alt="TrickWork">
+
+**[TrickWork](https://github.com/junkerderprovinz/trickwork#readme)** · [Script](#3-install-with-a-script) · [Image](#4-run-the-image)<br>
+Turns images into proportional-font-aware ASCII art - a rebuild of ASCII Gen 2, picking characters by real ink coverage, not brightness.
+
+<br clear="all">
+
+
+### Images
+
+*My own custom image builds of third-party apps. Full docs in each app's own repository.*
+
+<a id="euro-office"></a>
+<img src=".github/readme-icons/euro-office.png" width="84" align="left" alt="Euro Office">
+
+**[Euro Office](https://github.com/junkerderprovinz/euro-office#readme)** · [Image](#4-run-the-image)<br>
+Sovereign, OnlyOffice-compatible document server for browser editing of Office and OpenDocument files, wired into OpenCloud over WOPI.
+
+<br clear="all">
+
+<a id="excalidraw"></a>
+<img src=".github/readme-icons/excalidraw.png" width="84" align="left" alt="Excalidraw">
+
+**[Excalidraw](https://github.com/junkerderprovinz/excalidraw#readme)** · [Image](#4-run-the-image)<br>
+The hand-drawn whiteboard, built so it keeps to itself: shared links, live collaboration, the session scene and even the fonts all come from your own server.
+
+<br clear="all">
+
+<a id="filebot"></a>
+<img src=".github/readme-icons/filebot.png" width="84" align="left" alt="FileBot">
+
+**[FileBot](https://github.com/junkerderprovinz/filebot#readme)** · [Image](#4-run-the-image)<br>
+The FileBot media renamer in your browser on a fast Selkies web desktop, dark from the first start. Bring your own FileBot license.
+
+<br clear="all">
+
+<a id="garage"></a>
+<img src=".github/readme-icons/garage.png" width="84" align="left" alt="Garage">
+
+**[Garage](https://github.com/junkerderprovinz/garage#readme)** · [Image](#4-run-the-image)<br>
+Garage's S3-compatible object store and its web admin panel in one container, with the single-node layout and S3 keys created automatically.
+
+<br clear="all">
+
+<a id="handbrake"></a>
+<img src=".github/readme-icons/handbrake.png" width="84" align="left" alt="HandBrake">
+
+**[HandBrake](https://github.com/junkerderprovinz/handbrake#readme)** · [Image](#4-run-the-image)<br>
+HandBrake's full GUI on a fast Selkies web desktop, GPU-accelerated on NVIDIA, Intel and AMD, with a watch folder that converts on its own.
+
+<br clear="all">
+
+<a id="jdownloader"></a>
+<img src=".github/readme-icons/jdownloader.png" width="84" align="left" alt="JDownloader">
+
+**[JDownloader](https://github.com/junkerderprovinz/jdownloader#readme)** · [Image](#4-run-the-image)<br>
+JDownloader 2 with a complete, sleek dark UI out of the box, on a fast Selkies web desktop in your browser. No VNC client, no install.
+
+<br clear="all">
+
+<a id="juicefs"></a>
+<img src=".github/readme-icons/juicefs.png" width="84" align="left" alt="JuiceFS">
+
+**[JuiceFS](https://github.com/junkerderprovinz/juicefs#readme)** · [Image](#4-run-the-image)<br>
+The JuiceFS S3 gateway, with the file system created on first boot. Metadata goes to a database, file contents to an object store.
+
+<br clear="all">
+
+<a id="krusader"></a>
+<img src=".github/readme-icons/krusader.png" width="84" align="left" alt="Krusader">
+
+**[Krusader](https://github.com/junkerderprovinz/krusader#readme)** · [Image](#4-run-the-image)<br>
+Twin-pane KDE file manager with a native dark theme on a fast Selkies web desktop, with Kate, krename and RAR built in.
+
+<br clear="all">
+
+<a id="matrix"></a>
+<img src=".github/readme-icons/matrix.png" width="84" align="left" alt="Matrix">
+
+**[Matrix](https://github.com/junkerderprovinz/matrix#readme)** · [Image](#4-run-the-image)<br>
+A complete Matrix homeserver in one container: Synapse, coturn, Element Web and the Ketesa admin UI, with optional TURN over TLS.
+
+<br clear="all">
+
+<a id="opencloud"></a>
+<img src=".github/readme-icons/opencloud.png" width="84" align="left" alt="OpenCloud">
+
+**[OpenCloud](https://github.com/junkerderprovinz/opencloud#readme)** · [Image](#4-run-the-image)<br>
+One-click OpenCloud file sync &amp; share: auto-runs init, heals appdata permissions and honours PUID/PGID.
+
+<br clear="all">
+
+<a id="prusaslicer"></a>
+<img src=".github/readme-icons/prusaslicer.png" width="84" align="left" alt="PrusaSlicer">
+
+**[PrusaSlicer](https://github.com/junkerderprovinz/prusaslicer#readme)** · [Image](#4-run-the-image)<br>
+The PrusaSlicer 3D-printing slicer in your browser on a fast Selkies web desktop: slice and export G-code, no VNC client (amd64 + arm64).
+
+<br clear="all">
+
+<a id="rustdesk"></a>
+<img src=".github/readme-icons/rustdesk.png" width="84" align="left" alt="RustDesk">
+
+**[RustDesk](https://github.com/junkerderprovinz/rustdesk#readme)** · [Image](#4-run-the-image)<br>
+Your own RustDesk server with a web console, accounts, an address book on every client and devices that can change their ID.
+
+<br clear="all">
+
+<a id="seafile"></a>
+<img src=".github/readme-icons/seafile.png" width="84" align="left" alt="Seafile">
+
+**[Seafile](https://github.com/junkerderprovinz/seafile#readme)** · [Image](#4-run-the-image)<br>
+The official Seafile server from one template, with its secrets generated on first start and MariaDB, Redis and the notification server built in on request.
+
+<br clear="all">
+
+<a id="securo"></a>
+<img src=".github/readme-icons/securo.png" width="84" align="left" alt="Securo">
+
+**[Securo](https://github.com/junkerderprovinz/securo#readme)** · [Image](#4-run-the-image)<br>
+The Securo finance manager with its worker and scheduler in one container, on your own PostgreSQL and Redis or on built-in ones.
+
+<br clear="all">
+
+<a id="stellarium"></a>
+<img src=".github/readme-icons/stellarium.png" width="84" align="left" alt="Stellarium">
+
+**[Stellarium](https://github.com/junkerderprovinz/stellarium#readme)** · [Image](#4-run-the-image)<br>
+The Stellarium planetarium in your browser on a fast Selkies web desktop: pan the sky, zoom a nebula, scrub through time, no VNC client.
+
+<br clear="all">
+
+
+### Wrappers
+
+*Thin templates over a third-party upstream image (no custom build). Full docs in each app's folder below.*
+
+<a id="claper"></a>
+<img src=".github/readme-icons/claper.png" width="84" align="left" alt="Claper">
+
+**[Claper](https://github.com/junkerderprovinz/unraid-apps/blob/main/claper/README.md)** · [Image](#4-run-the-image)<br>
+Open-source, self-hosted Mentimeter/Slido alternative: live polls, Q&amp;A and quizzes alongside your slides, audience joins from their own device, no app install.
+
+<br clear="all">
+
+<a id="couchdb"></a>
+<img src=".github/readme-icons/couchdb.png" width="84" align="left" alt="CouchDB">
+
+**[CouchDB](https://github.com/junkerderprovinz/unraid-apps/blob/main/couchdb/README.md)** · [Image](#4-run-the-image)<br>
+The HTTP/JSON document database behind Obsidian LiveSync, on the official 3.x image with data, config and CORS mapped so they survive a recreate or update.
+
+<br clear="all">
+
+<a id="n8n"></a>
+<img src=".github/readme-icons/n8n.png" width="84" align="left" alt="n8n">
+
+**[n8n](https://github.com/junkerderprovinz/unraid-apps/blob/main/n8n/README.md)** · [Image](#4-run-the-image)<br>
+Workflow automation connecting 400+ apps and APIs, on PostgreSQL by default, with every option exposed in the Unraid template form.
+
+<br clear="all">
+
+<a id="openhands"></a>
+<img src=".github/readme-icons/openhands.png" width="84" align="left" alt="OpenHands">
+
+**[OpenHands](https://github.com/junkerderprovinz/unraid-apps/blob/main/openhands/README.md)** · [Docker](#5-run-it-with-docker)<br>
+Open-source AI software-development agent, pre-wired for a local Ollama model, so it reads, writes and runs code with no cloud account.
+
+<br clear="all">
+
+<a id="pocket-id"></a>
+<img src=".github/readme-icons/pocket-id.png" width="84" align="left" alt="Pocket ID">
+
+**[Pocket ID](https://github.com/junkerderprovinz/unraid-apps/blob/main/pocket-id/README.md)** · [Image](#4-run-the-image)<br>
+Passkey login for every app on your server that speaks OpenID Connect, with users, groups and an audit log, on SQLite or PostgreSQL.
+
+<br clear="all">
+
+<a id="rustfs"></a>
+<img src=".github/readme-icons/rustfs.png" width="84" align="left" alt="RustFS">
+
+**[RustFS](https://github.com/junkerderprovinz/unraid-apps/blob/main/rustfs/README.md)** · [Image](#4-run-the-image)<br>
+An S3 object store in Rust, with the two fixes it needs to run on Unraid at all. Pre-release: every version so far is a release candidate.
+
+<br clear="all">
+
+<a id="seaweedfs"></a>
+<img src=".github/readme-icons/seaweedfs.png" width="84" align="left" alt="SeaweedFS">
+
+**[SeaweedFS](https://github.com/junkerderprovinz/unraid-apps/blob/main/seaweedfs/README.md)** · [Image](#4-run-the-image)<br>
+Fast, S3-API-compatible object store on the official image, the actively-maintained alternative now that MinIO's open edition is done.
+
+<br clear="all">
+
+<a id="silo"></a>
+<img src=".github/readme-icons/silo.png" width="84" align="left" alt="Silo">
+
+**[Silo](https://github.com/junkerderprovinz/unraid-apps/blob/main/silo/README.md)** · [Image](#4-run-the-image)<br>
+MinIO, still maintained: PGSTY's fork of the open-source server, with the full web console. It reads an existing MinIO data folder as it is.
+
+<br clear="all">
+
+<a id="standardnotes-webui"></a>
+<img src=".github/readme-icons/standardnotes-webui.png" width="84" align="left" alt="Standard Notes Web UI">
+
+**[Standard Notes Web UI](https://github.com/junkerderprovinz/unraid-apps/blob/main/standardnotes-webui/README.md)** · [Image](#4-run-the-image)<br>
+The official Standard Notes web client, self-hosted next to your own sync server for end-to-end encrypted notes in the browser.
+
+<br clear="all">
+
+<a id="versitygw"></a>
+<img src=".github/readme-icons/versitygw.png" width="84" align="left" alt="VersityGW">
+
+**[VersityGW](https://github.com/junkerderprovinz/unraid-apps/blob/main/versitygw/README.md)** · [Image](#4-run-the-image)<br>
+An S3 API in front of a share you already have: top-level folders become buckets, and every file stays readable over SMB and NFS at the same time.
+
+<br clear="all">
+<!-- apps:end -->
 
 <br>
 
